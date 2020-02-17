@@ -17,7 +17,7 @@ class RandomWordsState extends State<ContactList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Startup Name Generator'),
+        title: Text('Contact List'),
       ),
       body: _buildSuggestions(),
     );
@@ -29,10 +29,7 @@ class RandomWordsState extends State<ContactList> {
 
     Widget _buildSuggestions() {
     return ListView.builder(
-        padding: const EdgeInsets.all(16.0),
         itemBuilder: /*1*/ (context, i) {
-          if (i.isOdd) return Divider(); /*2*/
-
           final index = i ~/ 2; /*3*/
           if (index >= _suggestions.length) {
             _suggestions.addAll(generateWordPairs().take(10)); /*4*/

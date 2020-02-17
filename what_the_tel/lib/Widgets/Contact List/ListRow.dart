@@ -33,16 +33,24 @@ class ListRowState extends State<ListRow> {
                 shape: BoxShape.circle,
                 image: DecorationImage(
                 fit: BoxFit.fill,
-                image: NetworkImage(
-                      "https://i.imgur.com/BoN9kdC.png")
-                      )
+                image: NetworkImage("https://i.imgur.com/BoN9kdC.png"))
               )
             ),
           ),
-          
-          Text(
-            widget.pair.asPascalCase,
-            style: widget._biggerFont,
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text(
+                widget.pair.asPascalCase,
+                style: widget._biggerFont,
+                textAlign: TextAlign.left,
+              ),
+              Container(
+                child: Text(
+                    "Test smaller text", 
+                  ),
+                ),
+            ],
           ),
         ]
       ),
