@@ -39,11 +39,35 @@ class RandomWordsState extends State<RandomWords> {
   }
 
   Widget _buildRow(WordPair pair) {
-  return ListTile(
-    title: Text(
-      pair.asPascalCase,
-      style: _biggerFont,
+  return Card(
+    child: Row(
+      children: <Widget>[
+        Padding(
+          padding: EdgeInsets.all(16.0),
+          child: new Container(
+          width: 64.0,
+          height: 64.0,
+          decoration: new BoxDecoration(
+              shape: BoxShape.circle,
+              image: new DecorationImage(
+              fit: BoxFit.fill,
+              image: new NetworkImage(
+                    "https://i.imgur.com/BoN9kdC.png")
+                    )
+            )
+          ),
+        ),
+        
+        Text(
+          pair.asPascalCase,
+          style: _biggerFont,
+        ),
+      ]
     ),
+    // title: Text(
+    //   pair.asPascalCase,
+    //   style: _biggerFont,
+    // ),
   );
 }
 
