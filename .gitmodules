@@ -1,3 +1,1 @@
-[submodule "what_the_tel/Telegram_API/td"]
-	path = what_the_tel/Telegram_API/td
-	url = https://github.com/tdlib/td.git
+
