@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 import 'package:flutter/material.dart';
-import 'Widgets/Contact List/ContactList.dart';
+import 'widgets/contact_list/ContactList.dart';
 
 
 void main() => runApp(MyApp());
