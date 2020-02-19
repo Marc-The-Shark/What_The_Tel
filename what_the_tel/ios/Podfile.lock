@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - tdlib (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - tdlib (from `.symlinks/plugins/tdlib/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  tdlib:
+    :path: ".symlinks/plugins/tdlib/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  tdlib: 7088c7c6532880795da2ef9f3954a8fc01524768
+
+PODFILE CHECKSUM: 083258d7f5e80b42ea9bfee905fe93049bc04c64
+
+COCOAPODS: 1.8.4
