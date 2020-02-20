@@ -5,10 +5,12 @@ class TelegramAuth {
   int client_id;
   TdlibParameters tdlib_params;
   TelegramAuth(){
+    login();
   }
 
    login() async {
     client_id = await TdClient.createClient();
+    TdObject obj = await TdClient.clientReceive(client_id, 2.0);
     TdClient.clientSend(client_id, SetTdlibParameters(
         parameters: TdlibParameters(
           useTestDc: true,
@@ -30,5 +32,4 @@ class TelegramAuth {
       )
     );
   }
-
 }
